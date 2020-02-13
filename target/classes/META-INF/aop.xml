@@ -1,0 +1,10 @@
+<aspectj>
+    <aspects>
+        <aspect name="br.sp.teste.Logging" />
+    </aspects>
+     <weaver options="-verbose -showWeaveInfo -debug">
+        <!-- only weave classes in our application-specific packages -->
+        <include within="br.sp.*"/>
+        <include within="br.sp.teste.*"/>
+    </weaver>
+</aspectj>
